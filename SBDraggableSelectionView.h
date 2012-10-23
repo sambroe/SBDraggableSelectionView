@@ -10,8 +10,9 @@
 
 @interface SBDraggableSelectionView : UIView
 
-@property (nonatomic, assign) NSInteger currentXDir;
-@property (nonatomic, assign) NSInteger currentYDir;
+//@property (nonatomic, assign) NSInteger currentXDir;
+//@property (nonatomic, assign) NSInteger currentYDir;
+@property (nonatomic, assign) CGPoint directionVector;
 @property (nonatomic, assign) CGPoint currentTouchPoint;
 @property (nonatomic, readonly) UIView *viewForPointLocation;
 

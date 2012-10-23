@@ -29,8 +29,9 @@
     UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:self.viewForPointLocation];
     
-    _currentXDir = 0;
-    _currentYDir = 0;
+//    _currentXDir = 0;
+//    _currentYDir = 0;
+    _directionVector = CGPointZero;
     
     _currentTouchPoint = point;
 }
@@ -63,8 +64,9 @@
     
     [self evalutateSelectionForPoint:point directon:CGPointMake(xDir, yDir)];
     
-    _currentXDir = xDir;
-    _currentYDir = yDir;
+//    _currentXDir = xDir;
+//    _currentYDir = yDir;
+    _directionVector = CGPointMake(xDir, yDir);
     _currentTouchPoint = point;
 }
 
@@ -75,8 +77,9 @@
     
     [self evalutateSelectionForPoint:point directon:CGPointZero];
     
-    _currentXDir = 0;
-    _currentYDir = 0;
+//    _currentXDir = 0;
+//    _currentYDir = 0;
+    _directionVector = CGPointZero;
     _currentTouchPoint = CGPointZero;
 }
 
@@ -87,8 +90,9 @@
     
     [self evalutateSelectionForPoint:point directon:CGPointZero];
     
-    _currentXDir = 0;
-    _currentYDir = 0;
+//    _currentXDir = 0;
+//    _currentYDir = 0;
+    _directionVector = CGPointZero;
     _currentTouchPoint = CGPointZero;
 }
 
